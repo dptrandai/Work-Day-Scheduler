@@ -18,47 +18,28 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Work Day Scheduler</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- put moment.js -->
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- current day goes here  -->
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <text id="timeHour">9:00AM</text><input type="jobDescription"></input><input class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">10:00AM</text><input type="jobDescription"></input><input class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">11:00AM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">12:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">1:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">2:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">3:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">4:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">5:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>  
-      <text id="timeHour">6:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">7:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">8:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-      <text id="timeHour">9:00PM</text><input type="jobDescription"></input><input id="saveBtn" class="btn btn-primary" type="submit" value="Save"><br>
-      <hr>
-    </div>
+     <div class="container">
 
+             <input type="text" class="form-control " placeholder="add event" id="in-9">
+
+              <button type="button" class="saveBtn" id="saveBtnID">save</button>
+
+      </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
-</html>
+  </html>
+
